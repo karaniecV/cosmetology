@@ -1,0 +1,213 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'TenorSans-Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: $colorFont;
+    background-color: #E5E5E5;
+}
+
+.sheet{
+    height: auto;
+    width: 100%;
+    background:#fff;
+}
+
+a {
+    text-decoration: none;
+    color: $colorFont;
+    &:hover, :active {
+        text-decoration: none;
+        color: $colorAkcent;
+    }
+}
+
+// h1 {
+//     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+//     font-style: normal;
+//     font-weight: 600;
+//     font-size: 64px;
+//     line-height: 78px;
+//     letter-spacing: 0.02em;
+//     color: $mainBlack;
+// }
+
+// h3 {
+//     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+//     font-style: normal;
+//     font-weight: 600;
+//     font-size: 24px;
+//     line-height: 29px;
+//     color: $mainBlack;
+// }
+
+// h4 {
+//     font-family: 'Lato', Arial, Helvetica, sans-serif;
+//     font-style: normal;
+//     font-weight: 300;
+//     font-size: 20px;
+//     line-height: 24px;
+//     letter-spacing: 0.02em;
+//     color: $mainBlack;
+// }
+
+// .my-button {
+//     background: $mainBlack;
+//     border-radius: 2px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     border: none;
+//     outline: none;
+//     font-style: normal;
+//     font-weight: 600;
+//     font-size: 14px;
+//     line-height: 17px;
+//     color: #ffffff;
+//     padding: 14px 18px;
+//     width: fit-content;
+//     cursor: pointer;
+//     transition: 0.3s;
+//     &:hover {
+//         background: $activeColor;
+//     }
+// }
+
+// .underlined-dotted {
+//     cursor: pointer;
+//     border-bottom: 1px dashed #515257;
+//     opacity: 0.7;
+//     transition: 0.3s;
+//     font-size: 12px;
+//     &:hover {
+//     opacity: 1;
+//     }
+// }
+
+// .input-group {
+//     position: relative;
+//     margin-bottom: 20px;
+//     & .input-area {
+//         outline: none;
+//         border: 2px solid #dadce0;
+//         padding: 16px 13px;
+//         font-size: 18px;
+//         border-radius: 5px;
+//         width: 100%;
+//         height: 48px;
+//         transition: 0.3s;
+//     }
+//     & .input-area:valid + .label {
+//         top: -8px;
+//         padding: 0 3px;
+//         font-size: 14px;
+//         color: #8d8d8d;
+//     }
+//     & .input-area:focus {
+//         border: 2px solid #6B6B6B;
+//         background: #F4F1EC;
+//     }
+//     & .label {
+//         color: #8d8d8d;
+//         position: absolute;
+//         top: 14px;
+//         left: 13px;
+//         background: #ffffff;
+//         transition: 0.3s;
+//     }
+//     & .input-area:focus + .label {
+//         top: -8px;
+//         padding: 0 3px;
+//         font-size: 14px;
+//         color: #515257;
+//         background: #F4F1EC;
+//     }
+//     & .input-area:not(:empty){
+//         background: #F4F1EC !important;
+//     }
+// }
+
+// //custom radiobuttons
+// /* для элемента input c type="radio" */
+// .custom-radio>input {
+//     position: absolute;
+//     z-index: -1;
+//     opacity: 0;
+//   }
+
+//   /* для элемента label связанного с .custom-radio */
+//   .custom-radio>span {
+//     display: inline-flex;
+//     align-items: center;
+//     user-select: none;
+//     position: relative;
+//   }
+
+//   /* создание в label псевдоэлемента  before со следующими стилями */
+//   .custom-radio>span::before {
+//     content: '';
+//     display: inline-block;
+//     width: 16px;
+//     height: 16px;
+//     flex-shrink: 0;
+//     flex-grow: 0;
+//     border: 1.5px solid rgba(81, 82, 87, 0.8);
+//     border-radius: 50%;
+//     margin-right: 0.5em;
+//     background-repeat: no-repeat;
+//     background-position: center center;
+//     background-size: 50% 50%;
+//     transition: 0.3s;
+//   }
+//   .custom-radio>span::after {
+//     content: '';
+//     display: inline-block;
+//     width: 14px;
+//     height: 14px;
+//     flex-shrink: 0;
+//     flex-grow: 0;
+//     border: 3px solid #F8F6F4;
+//     border-radius: 50%;
+//     margin-right: 0.5em;
+//     background-repeat: no-repeat;
+//     background-position: center center;
+//     background-size: 50% 50%;
+//     transition: 0.3s;
+//     position: absolute;
+//     left: 1px;
+//   }
+
+//   /* стили при наведении курсора на радио */
+//   .custom-radio>input:not(:disabled):not(:checked)+span:hover::before {
+//     border: 1.5px solid rgba(81, 82, 87, 1);
+//   }
+
+//   /* стили для активной радиокнопки (при нажатии на неё) */
+//   .custom-radio>input:not(:disabled):active+span::before {
+//     background-color: $activeColor;
+//   }
+
+//   /* стили для радиокнопки, находящейся в фокусе */
+//   .custom-radio>input:focus+span::before {
+//     // box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+//   }
+
+//   /* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+//   .custom-radio>input:focus:not(:checked)+span::before {
+//     // border-color: #80bdff;
+//   }
+
+//   /* стили для радиокнопки, находящейся в состоянии checked */
+//   .custom-radio>input:checked+span::before {
+//     // border-color: #0b76ef;
+//     background-color: $activeColor;
+//   }
+
+//   /* стили для радиокнопки, находящейся в состоянии disabled */
+//   .custom-radio>input:disabled+span::before {
+//     background-color: #e9ecef;
+//   }
