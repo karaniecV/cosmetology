@@ -1,32 +1,72 @@
-
 .header{
-  height: auto;
-  padding: 40px 20px;
-  background:#fff;
-  display: flex;
-  justify-content: space-between;
-}
-
-.header-left{
-  display: flex;
-}
-
-.header-left > * {
-  padding-right: 30px;
-}
-
-.header-right{
-  display: flex;
-}
-
-.header-right > * {
-  padding-left: 30px;
+  position: relative;
+  &-menu{
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    padding-top: 40px;
+    &-left{
+      display: flex;
+      & > *{
+        padding-right: 30px;
+      }
+    }
+    &-right{
+      display: flex;
+      & > *{
+        padding-left: 30px;
+  
+      }
+    }
+  }
 }
 
 a{
-  font-family: 'DidactGothic-Regular';
+  font-family: 'DidactGothic';
 }
 
 .hidden{
   display: none;
+}
+
+@media (max-width: 991px){
+  .header-right{
+    display: none;
+  }
+  .nav-link{
+    font-family: 'TenorSans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    letter-spacing: 0.01em;
+    color: $colorFont !important;
+  }
+  .nav-link:active,
+  .nav-link:hover{
+    color: $colorAkcent !important;
+    cursor: url('./../images/tap.svg') 30 30, auto;
+  }
+  .brand-link{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .number{
+    padding-bottom: 10px;
+  }
+}
+
+.navbar-toggler{
+  border: none;
+}
+
+button, 
+button:active, 
+button:focus {
+    outline: none;
+}
+
+.col{
+  position: relative;
 }

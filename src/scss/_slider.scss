@@ -1,5 +1,39 @@
+.swiper{
+    &-slide{
+        background-color: $colorBackground2;
+        width: 100%;
+    }
+    &-wrapper{
+        position: relative;
+    }
+    &-button-prev{
+        width: 29px;
+        height: 13px;
+    }
+}
 
-// .swiper-container {
-//     width: 100%;
-//     height: 1024px;
-// }
+.first-slide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 150px;
+    &-bottom{
+        display: flex;
+        align-items: center;
+        padding: 0 50px;
+        &-btn{
+            width: 200px;
+            height: 200px;
+            border: 3px solid $colorAkcent;
+            border-radius: 50%;
+            box-sizing: border-box;
+            text-align: center;
+            margin-right: 20px;
+        }
+        &-dscrpt-first{
+            margin-bottom: 20px;
+        }
+    }
+}

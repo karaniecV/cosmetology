@@ -1,65 +1,21 @@
-//-     .header-in-header.container
-//-             .header-left
-//-                 .about
-//-                     a(href="") О нас
-//-                 .service
-//-                     a(href="") Услуги
-//-                 .recomendation
-//-                     a(href="") Домашний уход
-//-                 .contacts
-//-                     a(href="") Контакты
-//-             .header-right
-//-                 .location
-//-                     a(href='#')
-//-                         p г.Гродно, ул. Калиновского 3, 1 этаж
-//-                 .number
-//-                     a(href='tel:+375336223331')
-//-                         p +375 (33) 6223331
-
-
-
-
-nav.navbar.navbar-expand-lg.navbar-light
-    .brand
-        a(href='tel:+375336223331')
-            p +375 (33) 6223331
-        a(href='#')
-            p г.Гродно, ул. Калиновского 3, 1 этаж
-
-    button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
-        img.burger(src="./../images/burger.svg", alt="")
-        img.close.hidden(src="./../images/close.svg", alt="")
-
-
-
-    .collapse.navbar-collapse#navbarSupportedContent
-            .header-left
-                ul.navbar-nav.mr-auto
-                    li.nav-item.about
-                        a.nav-link(href="#") О нас
-                    li.nav-item.service
-                        a.nav-link(href="#") Услуги
-                    li.nav-item.recomendation
-                        a.nav-link(href="#") Домашний уход
-                    li.nav-item.contacts
-                        a.nav-link(href="#") Контакты
-            .header-right
-                .location
-                    a(href='#')
-                        p г.Гродно, ул. Калиновского 3, 1 этаж
-                .number
-                    a(href='tel:+375336223331')
-                        p +375 (33) 6223331
-
-
-
-
-  
-  
-
-
-                        
-
-
-
-    
+.container
+    .row
+        .col
+            .header
+                .header-menu
+                    .header-menu-left
+                        .about
+                            a(href="") О нас
+                        .service
+                            a(href="") Услуги
+                        .recomendation
+                            a(href="") Домашний уход
+                        .contacts
+                            a(href="") Контакты
+                    .header-menu-right
+                        .location
+                            a(href='#')
+                                p г.Гродно, ул. Калиновского 3, 1 этаж
+                        .number
+                            a(href='tel:+375336223331')
+                                p +375 (33) 6223331

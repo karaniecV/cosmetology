@@ -17,22 +17,29 @@ var mySwiper = new Swiper('.swiper-container', {
 
 })
 
-const collapseButton = document.querySelector('.navbar-toggler')
-const burgerButton = document.querySelector('.burger')
-const closeButton = document.querySelector('.close')
-collapseButton.addEventListener('click', e =>{
-  e.preventDefault();
-  burgerButton.classList.toggle('hidden');
-  closeButton.classList.toggle('hidden');
-})
+// const collapseButton = document.querySelector('.navbar-toggler')
+// const burgerButton = document.querySelector('.burger')
+// const closeButton = document.querySelector('.close')
+// const location = document.querySelector('.location')
+// collapseButton.addEventListener('click', e =>{
+//   e.preventDefault();
+//   burgerButton.classList.toggle('hidden');
+//   closeButton.classList.toggle('hidden');
+//   location.classList.toggle('hidden');
+  
+// })
 
-const brand = document.querySelector('.brand')
-const headerRight = document.querySelector('.header-right')
-const whidth = document.documentElement.clientWidth;
-  if (whidth < 845) {
-    brand.classList.remove('hidden')
-    headerRight.classList.add('hidden')
-  } else {
-    brand.classList.add('hidden')
-    headerRight.classList.remove('hidden')
-    }
+// const brand = document.querySelector('.brand')
+// const headerRight = document.querySelector('.header-right')
+
+// window.addEventListener(`resize`, e => {
+//   let width = e.target.innerWidth
+//     if(width < 992) {
+//           brand.classList.remove('hidden')
+//           headerRight.classList.add('hidden')
+//         } else {
+//           brand.classList.add('hidden')
+//           headerRight.classList.remove('hidden')
+//           }
+// }, false);
+ 

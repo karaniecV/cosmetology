@@ -1,12 +1,12 @@
     @font-face {
         font-family: 'TenorSans';
-        src: local('TenorSans'), local('TenorSans-Regular'), url('./../resources/fonts/TenorSans-Regular.ttf') format('truetype');
+        src: local('TenorSans'), local('TenorSans'), url('./../fonts/TenorSans.ttf') format('truetype');
         font-weight: 400;
         font-style: normal;
     }
     @font-face {
         font-family: 'DidactGothic';
-        src: local('DidactGothic'), local('DidactGothic-Regular'), url('./../resources/fonts/DidactGothic-Regular.ttf') format('truetype');
+        src: local('DidactGothic'), local('DidactGothic'), url('./../fonts/DidactGothic.ttf') format('truetype');
         font-weight: 400;
         font-style: normal;
     }
