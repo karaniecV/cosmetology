@@ -4,9 +4,9 @@ var mySwiper = new Swiper('.swiper-container', {
     el: '.swiper-pagination',
     type: "fraction",
     renderFraction: function (currentClass, totalClass) {
-        return '0<span class="' + currentClass + '"></span>' +
+        return '<span>0</span><span class="' + currentClass + '"></span>' +
                 ' / ' +
-                '0<span class="' + totalClass + '"></span>';
+                '<span>0</span><span class="' + totalClass + '"></span>';
     }
   },
 

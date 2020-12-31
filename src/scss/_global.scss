@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    font-family: 'DidactGotic';
+    font-family: "DidactGothic";
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -11,8 +11,10 @@ body {
 }
 
 a {
+    line-height: 21px;
     text-decoration: none;
     color: $colorFont;
+    transition: 0.3s;
     &:hover, :active {
         text-decoration: none;
         color: $colorAkcent;
@@ -55,12 +57,7 @@ h3 {
 }
 
 .text1 {
-    font-family: "DidactGothic";
-    font-style: normal;
-    font-style: normal;
-    font-style: 16px;
     line-height: 24px;
-    color: $colorFont;
 }
 
 .price{
@@ -90,6 +87,28 @@ h3 {
         font-size: 14px;
         line-height: 16px;
     }
+}
+
+button{
+    width: 246px;
+    height: 246px;
+    font-family: 'TenorSans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    color: $colorFont;
+    letter-spacing: 0.01em;
+    border: 3px solid $colorAkcent;
+    border-radius: 50%;
+    background: transparent;
+    opacity: 0.8;
+    transition: 0.3s;
+    &:hover {
+        background: $colorAkcent;
+        color: #F9FBFC
+    }
+
 }
 
 
