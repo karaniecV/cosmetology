@@ -1,0 +1,68 @@
+.mail{
+    &-form{
+        background:  $colorBackground2;
+        width: 446px;
+        padding: 40px 40px 31px 40px;
+        margin-left: 92px;
+        &-group{
+            margin-bottom: 20px;
+            &-block{
+                background: #FFFFFF;
+                padding: 16px;
+                .input{
+                    border: none;
+                    padding: 0;
+                    background: transparent;
+                    &:focus{
+                        box-shadow: none;
+                    }
+                }
+            }
+            .invalid{
+                color: #DB524E;
+                margin-top: 8px;
+            }
+        }
+        .btn{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            & :first-child {
+                margin-right: 10px;
+            }
+            &:hover{
+                .sbmt{
+                    color: $colorAkcent;
+                }
+                .button{
+                    background: url(./../images/sbmt-hover.svg);
+                }
+            }
+            .button{
+                background: url(./../images/sbmt.svg);
+                background-repeat: no-repeat;
+                display: block; 
+                width: 40px;
+                height: 15px;
+            }
+            
+        }
+    }
+}
+
+.bury{
+    display: none;
+}
+
+.fog{
+    color: rgba(73, 88, 91, 0.5);
+    font-size: 14px;
+    line-height: 20px;
+    transition: 0.3s;
+}
+
+.error{
+    background: #F9E3E3;
+}
+
+

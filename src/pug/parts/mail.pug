@@ -1,4 +1,36 @@
-.container
-    .row
-        .col
-            .mail mail
+.mail
+    .mail-main
+    .mail-elements
+    .container
+        .row
+            .col
+                form.mail-form
+                    .mail-form-group
+                        .mail-form-group-block
+                            label(for="inputName") Имя
+                            input.input.bury.input-name(type="text" class="form-control" id="inputName")
+                        .invalid.invalid-name.bury Введите имя!
+
+                    .mail-form-group
+                        .mail-form-group-block.email-block
+                            label(for="inputEmail") Электронная почта
+                            input.input.bury.input-email(type="email" class="form-control" id="inputEmail")
+                        .invalid.invalid-email.bury Введите корректную электронную почту!
+                        .invalid.bury Введите электронную почту!
+
+
+                    .mail-form-group
+                        .mail-form-group-block
+                            label(for="inputTopic") Тема
+                            input.input.bury.input-topic(type="text" class="form-control" id="inputTopic")
+                        .invalid.invalid-topic.bury Введите тему!
+                
+                    .mail-form-group
+                        .mail-form-group-block
+                            label(for="inputText") Сообщение
+                            textarea.input.bury.input-text(type="text" class="form-control" id="inputText")
+                        .invalid.invalid-text.bury Введите сообщение!
+                    
+                    .btn
+                        p.price.sbmt Отправить
+                        p.button

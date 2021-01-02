@@ -4,9 +4,9 @@ var mySwiper = new Swiper('.swiper-container', {
     el: '.swiper-pagination',
     type: "fraction",
     renderFraction: function (currentClass, totalClass) {
-        return '<span>0</span><span class="' + currentClass + '"></span>' +
-                ' / ' +
-                '<span>0</span><span class="' + totalClass + '"></span>';
+      return '<span>0</span><span class="' + currentClass + '"></span>' +
+        ' / ' +
+        '<span>0</span><span class="' + totalClass + '"></span>';
     }
   },
 
@@ -26,7 +26,7 @@ var mySwiper = new Swiper('.swiper-container', {
 //   burgerButton.classList.toggle('hidden');
 //   closeButton.classList.toggle('hidden');
 //   location.classList.toggle('hidden');
-  
+
 // })
 
 // const brand = document.querySelector('.brand')
@@ -42,4 +42,57 @@ var mySwiper = new Swiper('.swiper-container', {
 //           headerRight.classList.remove('hidden')
 //           }
 // }, false);
- 
+
+
+
+// валидация формы
+const groupArr = document.querySelectorAll('.mail-form-group');
+const sbmtBtn = document.querySelector('.btn');
+
+groupArr.forEach(i => {
+  i.addEventListener('click', e => {
+    e.preventDefault();
+    i.firstElementChild.firstElementChild.classList.add('fog');
+    let input = i.firstElementChild.lastElementChild;
+    input.classList.remove('bury');
+    input.focus();
+    input.addEventListener('blur', e => {
+      e.preventDefault();
+      if (input.value.length < 1) {
+        i.lastElementChild.classList.remove('bury');
+        i.firstElementChild.classList.add('error');
+      }
+    })
+    input.addEventListener('input', e => {
+      e.preventDefault();
+      if (input.value.length > 0) {
+        i.lastElementChild.classList.add('bury');
+        i.firstElementChild.classList.remove('error');
+      }
+    })
+    let emailBlock = document.querySelector('.email-block');
+    let errorMsg = document.querySelector('.invalid-email');
+    emailBlock.lastElementChild.addEventListener('input', e => {
+      e.preventDefault();
+      if (!emailBlock.lastElementChild.value.match(/.+@.+\..+/i)) {
+        errorMsg.classList.remove('bury');
+        emailBlock.classList.add('error');
+      } else {
+        errorMsg.classList.add('bury');
+        emailBlock.classList.remove('error');
+
+      }
+    })
+  })
+})
+
+sbmtBtn.addEventListener('click', e => {
+  e.preventDefault();
+  groupArr.forEach(i => {
+    let input = i.firstElementChild.lastElementChild;
+    if (input.value.length < 1) {
+      i.lastElementChild.classList.remove('bury');
+      i.firstElementChild.classList.add('error');
+    }
+  })
+})
