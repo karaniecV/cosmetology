@@ -1,0 +1,44 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 23px 0;
+    @media(max-width: 576px){
+        flex-direction: column-reverse;
+    }
+
+    &-title{
+        display: flex;
+        @media(max-width: 576px){
+            flex-direction: column;
+            text-align: center;
+        }
+
+      &-rigth{
+        visibility: hidden;
+        @media(max-width: 576px){
+            visibility: visible;
+        }
+
+      }
+    }
+    &-menu{
+      display: flex;
+      & > *{
+        margin-left: 30px;
+        @media(max-width: 576px){
+            margin: 0;
+        }
+    
+      }
+      @media(max-width: 576px){
+          width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin:20px 0;
+        }
+
+  
+    }
+  }
+  

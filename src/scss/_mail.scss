@@ -4,6 +4,12 @@
         width: 446px;
         padding: 40px 40px 31px 40px;
         margin-left: 92px;
+        @media(max-width: 576px){
+            width: 100%;
+            padding: 40px 18px 16px 18px;
+            margin: 0 20px;
+            width: auto;
+        }
         &-group{
             margin-bottom: 20px;
             &-block{
