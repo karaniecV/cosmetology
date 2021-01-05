@@ -1,13 +1,15 @@
+.img
+    img(src="./../images/slider/slide1/vector.png", alt="")
+    img(src="./../images/slider/slide1/1st.png", alt="")
 .container
     .row
         .col
-            .first-slide
-                .first-slide-dscrpt
+            .slide
+                .slide-dscrpt
                     h1 ЗДОРОВАЯ КОЖА <br> — ГЛАВНОЕ <br> УСЛОВИЕ <br> КРАСОТЫ
-                .first-slide-block
-                    button Смотреть процедуры
-                    .first-slide-block-text
-                            p.text1 Кабинет врачебной <br> косметологии в г. Гродно
-                            p.text1 Работаем по предворительной записи <br> в удобное для Вас время
-.img
-    img(src="./../images/slider/slide1/1st.png", alt="")
+                .slide-block.margin-default-left 
+                    button
+                        a(href="#services") Смотреть процедуры
+                    .slide-block-text
+                            p.text-default Кабинет врачебной <br> косметологии в г. Гродно
+                            p.text-default Работаем по предворительной записи <br> в удобное для Вас время

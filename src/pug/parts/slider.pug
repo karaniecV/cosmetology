@@ -1,19 +1,29 @@
 .swiper-container
     .swiper-wrapper
         .swiper-slide
-            include ./sliders/slide1.pug
+            .swiper-slide-item.first
+                include ./sliders/slide1.pug
         .swiper-slide
-            include ./sliders/slide2.pug
+            .swiper-slide-item.second
+                include ./sliders/slide2.pug
         .swiper-slide
-            include ./sliders/slide3.pug
+            .swiper-slide-item.third
+                include ./sliders/slide3.pug
         .swiper-slide
-            include ./sliders/slide4.pug
+            .swiper-slide-item.fourth
+                include ./sliders/slide4.pug
         .swiper-slide
-            include ./sliders/slide5.pug
+            .swiper-slide-item.first
+                include ./sliders/slide5.pug
         .swiper-slide
-            include ./sliders/slide6.pug
-    .swiper-pagination
-    .swiper-button-prev
-                img(src="./../images/slider/prev.svg", alt="prev")
-    .swiper-button-next
-                img(src="./../images/slider/next.svg", alt="next")
+            .swiper-slide-item.second
+                include ./sliders/slide6.pug
+    .container
+        .row
+            .col
+                .swiper-control
+                    .swiper-pagination
+                    .swiper-button-prev
+                        img(src="./../images/slider/prev.svg", alt="prev")
+                    .swiper-button-next
+                        img(src="./../images/slider/next.svg", alt="next")

@@ -40,14 +40,25 @@
             }
         }
         &-text-p{
-            margin-left: 92px;
             @media(max-width: 576px){
                 margin: 0 21px 29px 38px;
             }
         }
-        &-img img{
-            @media(max-width: 576px){
-                width: 100%;
+        &-img {
+            position: relative;
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                @media(max-width: 576px){
+                    width: 100%;
+                }
+            }
+            .img-dscrpt-gel{
+                position: absolute;
+                top: -70px;
+                left: 215px;
+
             }
         }
     }

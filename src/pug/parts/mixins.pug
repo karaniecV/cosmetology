@@ -1,0 +1,24 @@
+mixin service (title, valuesArray, imgSrc, price)
+    .service-item.margin-default
+        .row.service-row
+            .col-lg-6
+                h3=title
+                p.service-price=price
+            .col-lg-6
+                .row.service-row
+                    .col-6
+                        each item in valuesArray
+                            p.text-default=item
+                    .col-6
+                        .service-img
+                            img(src=imgSrc, alt="")
+
+mixin serviceBottom (title, imgSrc, price)
+    .service-item.margin-default
+        .row.service-row
+            .col-lg-9
+                h3=title
+                p.service-price=price
+            .col-lg-3
+                .service-img
+                    img(src=imgSrc, alt="")

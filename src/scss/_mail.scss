@@ -1,73 +1,129 @@
-.mail{
-    &-form{
+.mail {
+    &-main {
+        background: $colorBackground1;
+        position: relative;
+        height: 422px;
+        img {
+            position: absolute;
+        }
+        &-right{
+            bottom: -120px;
+            right: 0;
+        }
+        &-leafs-right{
+            right: 0;
+            bottom: 0;
+        }
+        &-gel{
+            left: 550px;
+            bottom: 70px;
+        }
+        &-leafs-left{
+            left: 65px;
+            bottom:0;
+        }
+
+    }
+    &-form {
         background:  $colorBackground2;
-        width: 446px;
-        padding: 40px 40px 31px 40px;
-        margin-left: 92px;
-        @media(max-width: 576px){
+            position: absolute;
+            top: -42px;
+            left: 150px;
+            width: 446px;
+            padding: 40px 40px 31px 40px;
+        @media(max-width: 576px) {
             width: 100%;
             padding: 40px 18px 16px 18px;
             margin: 0 20px;
             width: auto;
         }
-        &-group{
+        &-group {
             margin-bottom: 20px;
-            &-block{
+            &-block {
                 background: #FFFFFF;
                 padding: 16px;
-                .input{
+                height: 56px;
+                & #inputText {
+                    resize: none;
+                    height: 100px;
+                }
+                label {
+                    margin: 0;
+                }
+                .input {
                     border: none;
                     padding: 0;
                     background: transparent;
-                    &:focus{
+                    height: 16px;
+                    &:focus {
                         box-shadow: none;
                     }
                 }
+                &.textarea {
+                    height: 145px;
+                }
             }
-            .invalid{
+            .invalid {
                 color: #DB524E;
                 margin-top: 8px;
             }
         }
-        .btn{
+        .btn {
             display: flex;
             align-items: center;
             justify-content: flex-end;
             & :first-child {
                 margin-right: 10px;
             }
-            &:hover{
-                .sbmt{
+            &:hover {
+                .sbmt {
                     color: $colorAkcent;
                 }
-                .button{
+                .button {
                     background: url(./../images/sbmt-hover.svg);
                 }
             }
-            .button{
+            .button {
                 background: url(./../images/sbmt.svg);
                 background-repeat: no-repeat;
                 display: block; 
-                width: 40px;
-                height: 15px;
+                width: 39px;
+                height: 13px;
             }
-            
+        }
+    }
+    &-text {
+        margin-top: 109px;
+        & h3{
+            margin-bottom: 40px;
+        }
+        &-bottom {
+            margin-bottom: 30px;
+
+        }
+        &-contact-phone{
+            margin-top: 7px;
+            display: flex;
+            img {
+                position: inherit;
+                margin-right: 9px;
+            }
         }
     }
 }
 
-.bury{
+.bury {
     display: none;
 }
 
-.fog{
+.fog {
     color: rgba(73, 88, 91, 0.5);
     font-size: 14px;
     line-height: 20px;
     transition: 0.3s;
 }
 
-.error{
+.error {
     background: #F9E3E3;
 }
 

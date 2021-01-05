@@ -1,36 +1,56 @@
 .mail
     .mail-main
-    .mail-elements
-    .container
-        .row
-            .col
-                form.mail-form
-                    .mail-form-group
-                        .mail-form-group-block
-                            label(for="inputName") Имя
-                            input.input.bury.input-name(type="text" class="form-control" id="inputName")
-                        .invalid.invalid-name.bury Введите имя!
+        img(src="./../../images/mail/vector.png", alt="")
+        img.mail-main-leafs-left(src="./../../images/mail/leafs-left.png", alt="")
+        img.mail-main-gel(src="./../../images/mail/gel.png", alt="")
+        img.mail-main-right(src="./../../images/mail/right.png", alt="")
+        img.mail-main-leafs-right(src="./../../images/mail/leafs-right.png", alt="")
+        form.mail-form
+            .mail-form-group
+                .mail-form-group-block
+                    label(for="inputName") Имя
+                    input.input.bury.input-name(type="text" class="form-control" id="inputName")
+                .invalid.invalid-name.bury Введите имя!
 
-                    .mail-form-group
-                        .mail-form-group-block.email-block
-                            label(for="inputEmail") Электронная почта
-                            input.input.bury.input-email(type="email" class="form-control" id="inputEmail")
-                        .invalid.invalid-email.bury Введите корректную электронную почту!
-                        .invalid.bury Введите электронную почту!
+            .mail-form-group
+                .mail-form-group-block.email-block
+                    label(for="inputEmail") Электронная почта
+                    input.input.bury.input-email(type="email" class="form-control" id="inputEmail")
+                .invalid.invalid-email.bury Введите корректную электронную почту!
+                .invalid.bury Введите электронную почту!
 
 
-                    .mail-form-group
-                        .mail-form-group-block
-                            label(for="inputTopic") Тема
-                            input.input.bury.input-topic(type="text" class="form-control" id="inputTopic")
-                        .invalid.invalid-topic.bury Введите тему!
-                
-                    .mail-form-group
-                        .mail-form-group-block
-                            label(for="inputText") Сообщение
-                            textarea.input.bury.input-text(type="text" class="form-control" id="inputText")
-                        .invalid.invalid-text.bury Введите сообщение!
-                    
-                    .btn
-                        p.price.sbmt Отправить
-                        p.button
+            .mail-form-group
+                .mail-form-group-block
+                    label(for="inputTopic") Тема
+                    input.input.bury.input-topic(type="text" class="form-control" id="inputTopic")
+                .invalid.invalid-topic.bury Введите тему!
+
+            .mail-form-group
+                .mail-form-group-block.textarea
+                    label(for="inputText") Сообщение
+                    textarea.input.bury.input-text(type="text" class="form-control" id="inputText")
+                .invalid.invalid-text.bury Введите сообщение!
+            
+            .btn
+                p.price.sbmt Отправить
+                p.button
+
+        .container
+            .row
+                .col
+                    .mail-main-wrapper.margin-default
+                        .row
+                            .col-lg-6
+                            .mail-text.col-lg-6
+                                h3 Остались вопросы?
+                                div.margin-default-left
+                                    p.text-default.mail-text-bottom Задайте вопрос прямо сейчас. Наши специалисты ответят на него максимально подробно.
+                                    .mail-text-contact
+                                        p.text-default Также Вы можете связаться с нами по телефону
+                                        .mail-text-contact-phone
+                                            img(src="./../../images/phone-icon.svg", alt="")
+                                            a(href='tel:+375336223331')
+                                                p +375 (33) 6223331
+            
+

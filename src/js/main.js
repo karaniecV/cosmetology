@@ -4,9 +4,8 @@ var mySwiper = new Swiper('.swiper-container', {
     el: '.swiper-pagination',
     type: "fraction",
     renderFraction: function (currentClass, totalClass) {
-      return '<span>0</span><span class="' + currentClass + '"></span>' +
-        ' / ' +
-        '<span>0</span><span class="' + totalClass + '"></span>';
+      return '<div class="pagination"><div class="pagination-top"><span>0</span><span class="' + currentClass + '"></span></div>' + '<div class="pagination-center"> / </div>' +
+        '<div class="pagination-bottom"><span>0</span><span class="' + totalClass + '"></span></div></div>';
     }
   },
 
@@ -54,8 +53,13 @@ groupArr.forEach(i => {
     e.preventDefault();
     i.firstElementChild.firstElementChild.classList.add('fog');
     let input = i.firstElementChild.lastElementChild;
+    let block = i.firstElementChild;
+    let label = i.firstElementChild.firstElementChild;
     input.classList.remove('bury');
     input.focus();
+    block.style.padding = '6px 0 0 16px';
+    label.style.fontSize = '14px';
+    
     input.addEventListener('blur', e => {
       e.preventDefault();
       if (input.value.length < 1) {
